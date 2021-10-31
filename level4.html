@@ -11,37 +11,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="lev1_bg">
+<body class="levRel4_bg">
     <div class="container">
         <div class="centerAlign">
             <div class="card login-card">
                 <form class="formHideLev">
-                    <h2 class="text-center">Lev 4<br> whom you find suspicious!!! </h2>
+                    <h2 class="text-center">What's the tool </h2>
                     <br>
                     <div class="form-group">
                         <input type="password" class="form-control input-get-lev input-lev-1" placeholder="Enter Code" required>
                     </div>
                     <button class="btn btn-primary deep-purple btn-block showClicklev lev1Sub">Submit</button>
+                    <div class="wrongLev">
+                        <h3>Any other tool in Mind</h3>
+                    </div>
                 </form>
 
                 <div class="showLev showLev1">
-                    <h3>Using shovel will dig into the patch and a safe box is discovered.</h3>
+                    <h3>Using shovel will dug into the patch and a safebox was discovered.</h3>
                     <div class="row align-items-center">
                         <div class="col-md-4">
-                            <img class="img-fluid" src="images/booklev2.png" alt="Books">
+                            <img class="img-fluid" src="images/skeleton.png" alt="Books">
                         </div>
                         <div class="col-md-8 extra">
                             <h4 class="text-center">Seems like a safe box. <br>Wonder what’s inside?</h4>
                         </div>
                     </div>
-                    <img class="img-fluid" src="images/SafeBoxCodeImg.jpg" alt="ASCII">
+                    <img class="img-fluid" src="images/SafeBoxCodeImg.jpg" style="margin-top: 20px;">
                     <div>
                         <a href="level5.html" class="btn-custom">Next Level</a>
                     </div>
                 </div>
-                <div class="wrongLev">
-                    <img class="img-fluid" src="images/wrong-lev-1.jpg" alt="Chala Ja">
-                </div>
+
             </div>
         </div>
     </div>
@@ -60,8 +61,6 @@
                 document.querySelector(".showLev").style.display = "block";
                 document.querySelector(".wrongLev").style.display = "none";
             } else {
-                document.querySelector(".formHideLev").style.display = "none";
-                document.querySelector(".showLev").style.display = "none";
                 document.querySelector(".wrongLev").style.display = "block";
             }
         });

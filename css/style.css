@@ -249,10 +249,6 @@
 
 /* Level 1 */
 
-.lev1_bg {
-    background-color: var(--level1);
-}
-
 .showLev,
 .wrongLev {
     display: none;
@@ -311,7 +307,8 @@
     margin-top: 20px;
 }
 
-.wpass {
+.wpass,
+.wpass2 {
     display: none;
     color: red;
 }
@@ -348,15 +345,25 @@
     text-align: left;
 }
 
-.extra h4 span,
-.levRel3_bg .card h3 {
+.lev2Con .extra h4 span {
     color: maroon;
     font-family: 'Creepster', cursive;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.lev2Con .extra h4 span b {
+    display: block;
+    font-size: 28px;
+    margin-top: 20px;
 }
 
 .levRel3_bg .card h3 {
+    color: maroon;
+    font-family: 'Creepster', cursive;
+    font-weight: bold;
     font-size: 22px;
 }
 
@@ -369,8 +376,16 @@
     margin-right: -25px;
 }
 
+.lev1_bg {
+    background-color: var(--level1);
+}
+
 .levRel1_bg {
     background-image: url(../images/level1bg.jpg);
+}
+
+.levRel2_bg {
+    background-image: url(../images/level2bg.jpg);
 }
 
 .levRel3_bg {
@@ -380,6 +395,24 @@
     background-position: center;
 }
 
+.levRel4_bg {
+    background-image: url(../images/level4bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.levRel4_bg .formHideLev {
+    margin: 60px;
+}
+
 .levRel3_bg .card {
     background-color: #fff9;
+}
+
+.wrongLev h3 {
+    color: maroon;
+    font-family: 'Creepster', cursive;
+    font-weight: bold;
+    font-size: 22px;
 }

@@ -22,6 +22,9 @@
                         <input type="password" class="form-control input-get-lev input-lev-1" placeholder="Enter Code" required>
                     </div>
                     <button class="btn btn-primary deep-purple btn-block showClicklev lev1Sub">Submit</button>
+                    <div class="wrongLev">
+                        <h3>Nothing suspicious found, try someone else's room...</h3>
+                    </div>
                 </form>
 
                 <div class="showLev showLev1">
@@ -40,9 +43,6 @@
                     <div>
                         <a href="level2.html" class="btn-custom">Next Level</a>
                     </div>
-                </div>
-                <div class="wrongLev">
-                    <img class="img-fluid" src="images/wrong-lev-1.jpg" alt="Chala Ja">
                 </div>
 
             </div>
@@ -63,8 +63,6 @@
                 document.querySelector(".showLev").style.display = "block";
                 document.querySelector(".wrongLev").style.display = "none";
             } else {
-                document.querySelector(".formHideLev").style.display = "none";
-                document.querySelector(".showLev").style.display = "none";
                 document.querySelector(".wrongLev").style.display = "block";
             }
         });

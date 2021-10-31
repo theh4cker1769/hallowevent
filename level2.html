@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="lev1_bg">
+<body class="levRel2_bg">
     <div class="container">
         <div class="centerAlign">
             <div class="card login-card lev2Login">
@@ -37,13 +37,13 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
-                    <form class="formHideLevExtra lev2Form">
+                    <form class="formHideLevExtra lev2Form lev2Con">
                         <div class="row align-items-center">
                             <div class="col-md-4">
                                 <img class="img-fluid" src="images/googlecalc.jpeg" alt="Books">
                             </div>
                             <div class="col-md-8 extra">
-                                <h4>For accessing the phone we need to decode the phones password <br> The only hint we got - <br> <span>FLIP THE "ESTIMATOR" WHEN YOU REACH #&^))^</span> </h4>
+                                <h4>For accessing the phone we need to decode the phones password <br> The only hint we got - <br> <span>FLIP THE "ESTIMATOR" WHEN YOU REACH <b> #&^))^</b></span> </h4>
                             </div>
                         </div>
                         <h4 class="text-center">Get phone password form above clue</h4>
@@ -52,7 +52,7 @@
                             <input type="password" class="form-control input-get-lev input-lev-2-extra" placeholder="Enter Code" required>
                         </div>
                         <button class="btn btn-primary deep-purple btn-block showClicklev lev2SubExtra">Submit</button>
-                        <p class="wpass">Wrong Guess! HeHe</p>
+                        <p class="wpass2">Wrong Guess again !!! He He</p>
                     </form>
                     <div class="showLev">
                         <h3>****PHONE UNLOCKED****</h3>
@@ -60,7 +60,7 @@
                         <a href="level3.html" class="btn-custom">Next Level</a>
                     </div>
                     <div class="wrongLev">
-                        <img class="img-fluid" src="images/wrong-lev-1.jpg" alt="Chala Ja">
+                        <h3></h3>
                     </div>
                 </div>
             </div>
@@ -91,11 +91,8 @@
                 if (getvalueinput == "google" || getvalueinput == "GOOGLE" || getvalueinput == "Google") {
                     document.querySelector(".formHideLevExtra").style.display = "none";
                     document.querySelector(".showLev").style.display = "block";
-                    document.querySelector(".wrongLev").style.display = "none";
                 } else {
-                    document.querySelector(".formHideLevExtra").style.display = "none";
-                    document.querySelector(".showLev").style.display = "none";
-                    document.querySelector(".wrongLev").style.display = "block";
+                    document.querySelector(".wpass2").style.display = "block";
                 }
             });
         }
