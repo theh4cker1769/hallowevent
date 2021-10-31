@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 4</title>
+    <title>Level 5</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="lev1_bg">
+<body class="lev1_bg levRel1_bg">
     <div class="container">
         <div class="centerAlign">
             <div class="card login-card">
                 <form class="formHideLev">
-                    <h2 class="text-center">Lev 4<br> whom you find suspicious!!! </h2>
+                    <h2 class="text-center">Enter Safebox Code</h2>
                     <br>
                     <div class="form-group">
                         <input type="password" class="form-control input-get-lev input-lev-1" placeholder="Enter Code" required>
@@ -25,23 +25,16 @@
                 </form>
 
                 <div class="showLev showLev1">
-                    <h3>Using shovel will dig into the patch and a safe box is discovered.</h3>
-                    <div class="row align-items-center">
-                        <div class="col-md-4">
-                            <img class="img-fluid" src="images/booklev2.png" alt="Books">
-                        </div>
-                        <div class="col-md-8 extra">
-                            <h4 class="text-center">Seems like a safe box. <br>Wonder what’s inside?</h4>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="images/SafeBoxCodeImg.jpg" alt="ASCII">
+                    <h3>Err..found something in Safebox. Observe Carefully and Proceed to next level</h3>
+                    <img class="img-fluid" src="images/booklev2.png" alt="Books">
                     <div>
-                        <a href="level5.html" class="btn-custom">Next Level</a>
+                        <a href="final.html" class="btn-custom">Next Level</a>
                     </div>
                 </div>
                 <div class="wrongLev">
                     <img class="img-fluid" src="images/wrong-lev-1.jpg" alt="Chala Ja">
                 </div>
+
             </div>
         </div>
     </div>
@@ -55,7 +48,7 @@
         document.querySelector(".lev1Sub").addEventListener("click", function(e) {
             e.preventDefault();
             var getvalueinput = document.querySelector(".input-lev-1").value;
-            if (getvalueinput == "shovel") {
+            if (getvalueinput == "069") {
                 document.querySelector(".formHideLev").style.display = "none";
                 document.querySelector(".showLev").style.display = "block";
                 document.querySelector(".wrongLev").style.display = "none";
