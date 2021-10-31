@@ -1,0 +1,353 @@
+:root {
+    --level1: maroon;
+    --level2: #84ebe6;
+    --level3: #86f894;
+    --level4: #f8eb79;
+    --level5: #f8ab7a;
+    --level6: #f57877;
+}
+
+.index {
+    background-image: url(../images/mainbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serviceBox {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0 20px 60px;
+    margin: 25px 0 0 15px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-custom {
+    background: var(--level1);
+    color: #fff;
+    box-shadow: 0 6px rgb(104, 1, 1);
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 10px 50px;
+    display: inline-block;
+    margin: 20px auto 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    box-shadow: 0 4px rgb(104, 1, 1);
+    top: 2px;
+    color: #212529;
+}
+
+.serviceBox:before {
+    content: '';
+    background-color: #ffffff9e;
+    border-bottom: 30px solid var(--level1);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.serviceBox .service-icon {
+    color: var(--level1);
+    background-color: var(--level1);
+    font-size: 35px;
+    text-align: center;
+    height: 74px;
+    width: 160px;
+    padding: 7px;
+    margin: 0 auto 30px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.serviceBox .service-icon:before {
+    content: '';
+    background-color: var(--level1);
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 25px;
+    bottom: -10px;
+}
+
+.serviceBox .service-icon span {
+    background-color: var(--level1);
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.serviceBox .service-icon img {
+    margin-bottom: 7px;
+}
+
+.serviceBox .title {
+    color: var(--level1);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-family: 'Creepster', cursive;
+}
+
+.serviceBox .description {
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+}
+
+
+/* .serviceBox.level2:before {
+    border-color: var(--level2);
+}
+
+.serviceBox.level2 .btn-custom {
+    background: var(--level2);
+    box-shadow: 0 6px #57faf2;
+}
+
+.serviceBox.level2 .btn-custom:hover {
+    box-shadow: 0 4px #57faf2;
+}
+
+.serviceBox.level2 .service-icon,
+.serviceBox.level2 .service-icon:before {
+    color: var(--level2);
+    background-color: var(--level2);
+}
+
+.serviceBox.level2 .title {
+    color: var(--level2);
+}
+
+.serviceBox.level3:before {
+    border-color: var(--level3);
+}
+
+.serviceBox.level3 .btn-custom {
+    background: var(--level3);
+    box-shadow: 0 6px #53e264;
+}
+
+.serviceBox.level3 .btn-custom:hover {
+    box-shadow: 0 4px #53e264;
+}
+
+.serviceBox.level3 .service-icon,
+.serviceBox.level3 .service-icon:before {
+    color: var(--level3);
+    background-color: var(--level3);
+}
+
+.serviceBox.level3 .title {
+    color: var(--level3);
+}
+
+.serviceBox.level4:before {
+    border-color: var(--level4);
+}
+
+.serviceBox.level4 .btn-custom {
+    background: var(--level4);
+    box-shadow: 0 6px #ffeb37;
+}
+
+.serviceBox.level4 .btn-custom:hover {
+    background: var(--level4);
+    box-shadow: 0 4px #ffeb37;
+}
+
+.serviceBox.level4 .service-icon,
+.serviceBox.level4 .service-icon:before {
+    color: var(--level4);
+    background-color: var(--level4);
+}
+
+.serviceBox.level4 .title {
+    color: var(--level4);
+}
+
+.serviceBox.level5:before {
+    border-color: var(--level5);
+}
+
+.serviceBox.level5 .btn-custom {
+    background: var(--level5);
+    box-shadow: 0 6px #e98344;
+}
+
+.serviceBox.level5 .btn-custom:hover {
+    box-shadow: 0 4px #e98344;
+}
+
+.serviceBox.level5 .service-icon,
+.serviceBox.level5 .service-icon:before {
+    color: var(--level5);
+    background-color: var(--level5);
+}
+
+.serviceBox.level5 .title {
+    color: var(--level5);
+}
+
+.serviceBox.level6:before {
+    border-color: var(--level6);
+}
+
+.serviceBox.level6 .btn-custom {
+    background: var(--level6);
+    box-shadow: 0 6px #eb4e4e;
+}
+
+.serviceBox.level6 .btn-custom:hover {
+    box-shadow: 0 4px #eb4e4e;
+}
+
+.serviceBox.level6 .service-icon,
+.serviceBox.level6 .service-icon:before {
+    color: var(--level6);
+    background-color: var(--level6);
+}
+
+.serviceBox.level6 .title {
+    color: var(--level6);
+} */
+
+@media only screen and (max-width: 990px) {
+    .serviceBox {
+        margin: 0 0 30px;
+    }
+}
+
+
+/* Level 1 */
+
+.lev1_bg {
+    background-color: var(--level1);
+}
+
+.showLev,
+.wrongLev {
+    display: none;
+    text-align: center;
+}
+
+.centerAlign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login-card {
+    width: auto;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.input-get-lev {
+    border-radius: 30px;
+    background-color: #ebf0fc;
+    border-color: #ebf0fc;
+    color: #9da3b0;
+    padding: 8px 20px;
+}
+
+.showClicklev {
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.custom-card {
+    background-color: #ffffffa1;
+    text-align: center;
+}
+
+.custom-card h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 80px;
+    color: var(--level1);
+}
+
+.custom-card p {
+    font-size: 18px;
+}
+
+.custom-card .card-body>h3 {
+    margin-bottom: 40px;
+}
+
+.custom-card h3 {
+    font-family: 'Creepster', cursive;
+    color: var(--level1);
+    margin-top: 20px;
+}
+
+.wpass {
+    display: none;
+    color: red;
+}
+
+.formHideLev h2 {
+    font-size: 22px;
+}
+
+.showLev1>img {
+    width: 60%;
+}
+
+.showLev3>img {
+    width: 250px;
+}
+
+.showLev1 {
+    width: 650px;
+}
+
+.showLev3 {
+    width: 900px;
+}
+
+.showLev1>h3,
+.lev2Form>h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: maroon;
+    font-weight: bold;
+}
+
+.extra h4 {
+    text-align: left;
+}
+
+.lev2Login {
+    width: 500px;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="lev1_bg">
+    <div class="container">
+        <div class="centerAlign">
+            <div class="card login-card lev2Login">
+                <form class="formHideLev">
+                    <h2 class="text-center">Did You Find Something ???</h2>
+                    <br>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-get-lev input-lev-2" placeholder="Enter Code" required>
+                    </div>
+                    <button class="btn btn-primary deep-purple btn-block showClicklev lev2Sub">Submit</button>
+                    <p class="wpass">Wrong Guess! HeHe</p>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Add Subjects-->
+    <div class="modal fade addSubModal" id="lev2modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form class="formHideLevExtra lev2Form">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <img class="img-fluid" src="images/booklev2.png" alt="Books">
+                            </div>
+                            <div class="col-md-8 extra">
+                                <h4>Oops, caught a big fish!! We discovered a phone.<br><br> BUT, for accessing the phone we need to decode phones password</h4>
+                            </div>
+                        </div>
+                        <h4 class="text-center">Get phone password form above clue</h4>
+                        <br>
+                        <div class="form-group">
+                            <input type="password" class="form-control input-get-lev input-lev-2-extra" placeholder="Enter Code" required>
+                        </div>
+                        <button class="btn btn-primary deep-purple btn-block showClicklev lev2SubExtra">Submit</button>
+                        <p class="wpass">Wrong Guess! HeHe</p>
+                    </form>
+                    <div class="showLev">
+                        <h3>****PHONE UNLOCKED****</h3>
+                        <p>Recording</p>
+                        <a href="level3.html" class="btn-custom">Next Level</a>
+                    </div>
+                    <div class="wrongLev">
+                        <img class="img-fluid" src="images/wrong-lev-1.jpg" alt="Chala Ja">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelector(".lev2Sub").addEventListener("click", function(e) {
+            e.preventDefault();
+            var getvalueinput = document.querySelector(".input-lev-2").value;
+            if (getvalueinput == "rosethrone") {
+                var myModal = new bootstrap.Modal(document.getElementById('lev2modal'), {})
+                myModal.show();
+                lev2Sub();
+            } else {
+                document.querySelector(".wpass").style.display = "block";
+            }
+        });
+
+        function lev2Sub() {
+            document.querySelector(".lev2SubExtra").addEventListener("click", function(e) {
+                e.preventDefault();
+                var getvalueinput = document.querySelector(".input-lev-2-extra").value;
+                if (getvalueinput == "google" || getvalueinput == "GOOGLE" || getvalueinput == "Google") {
+                    document.querySelector(".formHideLevExtra").style.display = "none";
+                    document.querySelector(".showLev").style.display = "block";
+                    document.querySelector(".wrongLev").style.display = "none";
+                } else {
+                    document.querySelector(".formHideLevExtra").style.display = "none";
+                    document.querySelector(".showLev").style.display = "none";
+                    document.querySelector(".wrongLev").style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

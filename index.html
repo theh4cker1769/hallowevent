@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="index">
+    <div class="container">
+        <div class="card custom-card">
+            <div class="card-body">
+                <h1>-CRASHES-</h1>
+                <p>Rose hears a huge thud from the room above hers. She rushes quickly to check upon her friend Elle Fent who lives in the room above at St. Josheps hostel for medical students. As she approaches towards the room she could hear the murmur
+                    of several spectator. The door was ajar, no one was willing to enter the cold, dark and eerie abode. However Rose dashes in and discovers a dead Elle on the floor, unable to believe the sight in front of her she screams and the bystanders
+                    come rushing in quickly calling the police for investigation.</p>
+                <audio controls>
+                    <source src="images/mainaudio.mpeg" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <h3>Introducing you the suspect’s police listed down for further investigation in the case.</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="doors">
+                            <img class="img-fluid" src="images/room-door.png" alt="Professor Bones">
+                            <h3>Professor Bones</h3>
+                            <p>Professor in medical college who used to teach elle and also knew her family on personal note</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="doors">
+                            <img class="img-fluid" src="images/room-door.png" alt="Rose Thorne">
+                            <h3>Rose Thorne</h3>
+                            <p>Elle’s close friend since few years, stays in same hostel building as hers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="doors">
+                            <img class="img-fluid" src="images/room-door.png" alt="Ava Stone">
+                            <h3>Ava Stone</h3>
+                            <p>elles friend,her bench partner during class hours who spends most of the time with elle</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="doors">
+                            <img class="img-fluid" src="images/room-door.png" alt="Eric Tile">
+                            <h3>Eric Tile</h3>
+                            <p>elles childhood friend whos out of campus,she meets him regularly during weekends </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6"></div>
+            <div class="col-md-4 col-sm-6">
+                <div class="serviceBox">
+                    <div class="service-icon">
+                        <span><img class="img-fluid" src="images/pumpkin.png"></span>
+                    </div>
+                    <h3 class="title">Level 1</h3>
+                    <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+                    <a href="level1.html" class="btn-custom">Enter</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6"></div>
+
+        </div>
+    </div>
+
+    <!-- Modal Add Subjects-->
+    <div class="modal fade addSubModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Instructions</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Test Test est
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {})
+        myModal.show();
+    </script>
+</body>
+
+</html>
