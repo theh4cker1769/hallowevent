@@ -324,8 +324,8 @@
     width: 60%;
 }
 
-.showLev3>img {
-    width: 250px;
+.showLev3>a>img {
+    width: 300px;
 }
 
 .showLev1 {
@@ -348,8 +348,16 @@
     text-align: left;
 }
 
-.extra h4 span {
+.extra h4 span,
+.levRel3_bg .card h3 {
     color: maroon;
+    font-family: 'Creepster', cursive;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.levRel3_bg .card h3 {
+    font-size: 22px;
 }
 
 .lev2Login {
@@ -359,4 +367,19 @@
 .addSubModal h2 {
     margin: 0 auto;
     margin-right: -25px;
+}
+
+.levRel1_bg {
+    background-image: url(../images/level1bg.jpg);
+}
+
+.levRel3_bg {
+    background-image: url(../images/level3bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.levRel3_bg .card {
+    background-color: #fff9;
 }
