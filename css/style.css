@@ -348,6 +348,15 @@
     text-align: left;
 }
 
+.extra h4 span {
+    color: maroon;
+}
+
 .lev2Login {
     width: 500px;
+}
+
+.addSubModal h2 {
+    margin: 0 auto;
+    margin-right: -25px;
 }
