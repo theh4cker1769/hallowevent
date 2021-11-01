@@ -123,123 +123,6 @@
     margin: 0;
 }
 
-
-/* .serviceBox.level2:before {
-    border-color: var(--level2);
-}
-
-.serviceBox.level2 .btn-custom {
-    background: var(--level2);
-    box-shadow: 0 6px #57faf2;
-}
-
-.serviceBox.level2 .btn-custom:hover {
-    box-shadow: 0 4px #57faf2;
-}
-
-.serviceBox.level2 .service-icon,
-.serviceBox.level2 .service-icon:before {
-    color: var(--level2);
-    background-color: var(--level2);
-}
-
-.serviceBox.level2 .title {
-    color: var(--level2);
-}
-
-.serviceBox.level3:before {
-    border-color: var(--level3);
-}
-
-.serviceBox.level3 .btn-custom {
-    background: var(--level3);
-    box-shadow: 0 6px #53e264;
-}
-
-.serviceBox.level3 .btn-custom:hover {
-    box-shadow: 0 4px #53e264;
-}
-
-.serviceBox.level3 .service-icon,
-.serviceBox.level3 .service-icon:before {
-    color: var(--level3);
-    background-color: var(--level3);
-}
-
-.serviceBox.level3 .title {
-    color: var(--level3);
-}
-
-.serviceBox.level4:before {
-    border-color: var(--level4);
-}
-
-.serviceBox.level4 .btn-custom {
-    background: var(--level4);
-    box-shadow: 0 6px #ffeb37;
-}
-
-.serviceBox.level4 .btn-custom:hover {
-    background: var(--level4);
-    box-shadow: 0 4px #ffeb37;
-}
-
-.serviceBox.level4 .service-icon,
-.serviceBox.level4 .service-icon:before {
-    color: var(--level4);
-    background-color: var(--level4);
-}
-
-.serviceBox.level4 .title {
-    color: var(--level4);
-}
-
-.serviceBox.level5:before {
-    border-color: var(--level5);
-}
-
-.serviceBox.level5 .btn-custom {
-    background: var(--level5);
-    box-shadow: 0 6px #e98344;
-}
-
-.serviceBox.level5 .btn-custom:hover {
-    box-shadow: 0 4px #e98344;
-}
-
-.serviceBox.level5 .service-icon,
-.serviceBox.level5 .service-icon:before {
-    color: var(--level5);
-    background-color: var(--level5);
-}
-
-.serviceBox.level5 .title {
-    color: var(--level5);
-}
-
-.serviceBox.level6:before {
-    border-color: var(--level6);
-}
-
-.serviceBox.level6 .btn-custom {
-    background: var(--level6);
-    box-shadow: 0 6px #eb4e4e;
-}
-
-.serviceBox.level6 .btn-custom:hover {
-    box-shadow: 0 4px #eb4e4e;
-}
-
-.serviceBox.level6 .service-icon,
-.serviceBox.level6 .service-icon:before {
-    color: var(--level6);
-    background-color: var(--level6);
-}
-
-.serviceBox.level6 .title {
-    color: var(--level6);
-} */
-
 @media only screen and (max-width: 990px) {
     .serviceBox {
         margin: 0 0 30px;
@@ -329,8 +212,20 @@
     width: 650px;
 }
 
+@media screen and (max-width: 990px) {
+    .showLev1 {
+        width: auto;
+    }
+}
+
 .showLev3 {
     width: 900px;
+}
+
+@media screen and (max-width: 990px) {
+    .showLev3 {
+        width: auto;
+    }
 }
 
 .showLev1>h3,
